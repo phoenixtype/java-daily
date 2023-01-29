@@ -30,10 +30,8 @@ class ResultDiagonalDifference {
                 //first array and first element in first array (a) --> [[a,b,c], [d,e,f], [g,h,i]]
             }
         }
-
         return Math.abs(leftToRightValues - rightToLeftValues);
     }
-
 }
 
 public class DiagonalDifference {
