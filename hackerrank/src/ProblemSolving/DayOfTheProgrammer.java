@@ -14,17 +14,21 @@ class ResultDayOfTheProgrammer {
      */
 
 
-/*
-    public static String dayOfProgrammer(int year) {
+
+    public static String dayOfProgrammerShort(int year) {
         LocalDate date = LocalDate.ofYearDay(year, 256);
-        if(year == 1918) date = date.plusDays(13);
-        else if(year < 1918 && year % 4 == 0 && !date.isLeapYear()){
+
+        if(year == 1918) {
+            date = date.plusDays(13);
+        }
+
+        else if(year < 1918 && year % 4 == 0 && !date.isLeapYear()) {
             date = date.minusDays(1);
         }
         return date.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
- */
+
 
 
     public static String dayOfProgrammer(int year) {
