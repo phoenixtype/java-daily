@@ -23,6 +23,7 @@ class ResultDrawingBook {
      *  2. INTEGER p
      */
 
+/*
     public static int pageCount(int n, int p) {
         // Write your code here
         int minimumCount = 0;
@@ -58,6 +59,12 @@ class ResultDrawingBook {
             rightToLeftCount = (n - p)/2;
         }
         return minimumCount = Math.min(leftToRightCount, rightToLeftCount);
+    }
+
+ */
+
+    public static int pageCount(int n, int p) {
+        return Math.min(p/2, (n-p)/2);
     }
 }
 
