@@ -37,6 +37,7 @@ class ResultClimbingLeaderboard {
             int end = ranked.size() - 1;
             int medium = (start + end) / 2;
             int i = 0;
+
             //"Binary search"
             while (start <= end && ranked.get(medium) != valuePlayer) {
                 if (valuePlayer < ranked.get(medium)) {
@@ -53,8 +54,12 @@ class ResultClimbingLeaderboard {
             } else if (i < 0) {
                 result.add(1);
             } else {
-                if (valuePlayer == ranked.get(medium)) result.add(medium + 1);
-                else result.add(medium + 2);
+                if (valuePlayer == ranked.get(medium)) {
+                    result.add(medium + 1);
+                }
+                else {
+                    result.add(medium + 2);
+                }
             }
         }
         return result;
