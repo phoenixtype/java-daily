@@ -64,42 +64,6 @@ class ResultClimbingLeaderboard {
         }
         return result;
     }
-
-
-    /**
-    public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
-        HashMap<Integer, Integer> denseRank = new HashMap<>();
-
-        List<Integer> position = new ArrayList<>();
-
-        int indexOfNewElement = 0;
-
-        for (int i = 0; i < ranked.size(); i++) {
-            if (denseRank.get(ranked.get(i)) == null) {
-                denseRank.put(ranked.get(i), 0);
-            }
-            if (denseRank.get(ranked.get(i)) != null) {
-                denseRank.put(ranked.get(i), denseRank.get(ranked.get(i)) + 1);
-            }
-        }
-        List<Integer> sortedRank = denseRank.keySet().stream().collect(Collectors.toList());
-
-        for (int i = 0; i < player.size(); i++) {
-            if (sortedRank.contains(player.get(i))) {
-                indexOfNewElement = sortedRank.indexOf(player.get(i));
-                position.add((sortedRank.size()) - indexOfNewElement);
-            } else {
-                sortedRank.add(player.get(i));
-                sortedRank.sort(null);
-                indexOfNewElement = sortedRank.indexOf(player.get(i));
-                position.add((sortedRank.size()) - indexOfNewElement);
-                sortedRank.remove(player.get(i));
-            }
-        }
-        return position;
-    }
-     */
-
 }
 
 public class ClimbingLeaderboard {
