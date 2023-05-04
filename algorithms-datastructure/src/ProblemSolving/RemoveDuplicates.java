@@ -14,6 +14,7 @@ public class RemoveDuplicates {
         List<Integer> duplcatesRemovedList = originalList.stream().distinct().toList();
         System.out.println(duplcatesRemovedList);
     }
+
     //Using Set Interface
     public static void duplicatesSet() {
         List<Integer> originalList = Arrays.asList(1,2,2,3,3,3,4,4,4,4,5,5,5,5,5,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8);
@@ -21,6 +22,4 @@ public class RemoveDuplicates {
         List<Integer> uniqueList = new ArrayList<>(duplicateRemoverList);
         System.out.println(uniqueList);
     }
-
-
 }
