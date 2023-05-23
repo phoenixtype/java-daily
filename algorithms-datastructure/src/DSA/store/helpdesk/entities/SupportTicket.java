@@ -2,7 +2,7 @@ package DSA.store.helpdesk.entities;
 
 public interface SupportTicket {
 
-	Priority getPriority();
+	DSA.store.helpdesk.entities.Priority getPriority();
 
 	/**
 	 * This method returns the unique sequential number of the support ticket.
