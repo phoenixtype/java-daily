@@ -14,16 +14,14 @@ public class DistinctInt {
         for (int j : arr) {
             integerSet.add(j);
         }
-
-//        System.out.println(integerSet);
-
         int[] result = integerSet.stream().mapToInt(Integer::intValue).toArray();
         System.out.println(Arrays.toString(result));
     }
 
     private static void distinctUsingStreams(int[] arr) {
-//        System.out.println(Arrays.toString(Arrays.stream(arr).distinct().toArray()));
         int[] result = Arrays.stream(arr).distinct().toArray();
+        int maxVal = Arrays.stream(arr).max().getAsInt();
         System.out.println(Arrays.toString(result));
+        System.out.println("max value = " + maxVal);
     }
 }

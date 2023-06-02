@@ -8,12 +8,14 @@ public class CharacterCount {
     public static void declarativeCountCharacters(String input) {
         long uppercaseCount = input.chars().filter(Character::isUpperCase).count();
         System.out.println("DECLARATIVE");
-        System.out.println("declarative uppercaseCount" + uppercaseCount);
+        System.out.println("Declarative uppercaseCount = " + uppercaseCount);
         long lowercaseCount = input.chars().filter(Character::isLowerCase).count();
-        System.out.println("declarative lowercaseCount" + lowercaseCount);
+        System.out.println("Declarative lowercaseCount = " + lowercaseCount);
         long numberCount = input.chars().filter(Character::isDigit).count();
-        System.out.println("declarative numberCount" + numberCount);
+        System.out.println("Declarative numberCount = " + numberCount);
         System.out.println();
+
+        long countNum = input.chars().filter(Character::isUpperCase).count();
     }
 
     public static void imperativeCountCharacters(String input) {
@@ -31,8 +33,8 @@ public class CharacterCount {
             }
         }
         System.out.println("IMPERATIVE");
-        System.out.println("imperative uppercaseCount" + uppercaseCount);
-        System.out.println("imperative lowercaseCount" + lowercaseCount);
-        System.out.println("imperative numberCount" + numberCount);
+        System.out.println("imperative uppercaseCount = " + uppercaseCount);
+        System.out.println("imperative lowercaseCount = " + lowercaseCount);
+        System.out.println("imperative numberCount = " + numberCount);
     }
 }
